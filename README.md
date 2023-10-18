@@ -14,18 +14,23 @@ Deadline's own monitor program is powerful but overwhelming. Most artist just wa
 # Monitor a single job with a little help from ChatGPT.
 
 Whenever your job encounters an error, ChatGPT will read the error logs for you and provide you with a readable summary.
-![gpt_gif](https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/09b03765-346d-4222-bb93-99d825f90534)
-
+<p align="center">
+  <img src="https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/09b03765-346d-4222-bb93-99d825f90534" />
+</p>
 
 # Previews frames as compressed JPEGs
 
 You can click on a finished frame to download a JPEG preview.
-![image_preview](https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/99dc950b-08a2-4289-bccb-a78ec7f79e08)
+
+<p align="center">
+  <img src="https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/99dc950b-08a2-4289-bccb-a78ec7f79e08" />
+</p>
 
 
 # Mobile friendly design
-
 Monitor your render jobs from anywhere right on your phone.
-![mobile](https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/4571b4fd-38dd-4210-8c53-4243f7cf8a43)
 
+<p align="center">
+  <img src="https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/4571b4fd-38dd-4210-8c53-4243f7cf8a43" />
+</p>
 
