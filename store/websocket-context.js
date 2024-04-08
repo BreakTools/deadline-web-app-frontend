@@ -1,8 +1,7 @@
 import { createContext, useEffect, useRef, useState } from "react";
 import { useCookies } from "react-cookie";
 
-//Set this to where your web app backend is running!
-const WEBSOCKET_URL = "wss://your-backend.com";
+const WEBSOCKET_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 //This is here just so my IDE picks up the variables correctly.
 const WebsocketContext = createContext({
@@ -57,7 +56,6 @@ export function WebSocketContextProvider(props) {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      //Make this from env variable
       ws.current = new WebSocket(WEBSOCKET_URL);
 
       ws.current.onopen = () => {
