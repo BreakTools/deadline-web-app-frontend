@@ -172,7 +172,7 @@ function JobDetailPage(props) {
   if (typeof aiText != "undefined") {
     if (aiText[jobId] != "" && typeof aiText[jobId] != "undefined") {
       aiTextBlock = (
-        <p className="md:text-md mx-4 break-all py-3 text-left text-lg">
+        <p className="md:text-md mx-4 break-words overflow-auto py-3 text-left text-lg">
           {aiText[jobId].replace(/\//g, "∕")}
         </p>
       );
