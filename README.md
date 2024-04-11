@@ -35,6 +35,7 @@ Monitor your render jobs from anywhere right on your phone.
 </p>
 
 # Installation instructions (Docker)
+Unfortunately I can't provided a built image due to how NextJS generates static HTML at build time, which has to include the backend WebSocket URL. I've provided a docker-compose file so you can easily build and run the image yourself.
 1. Make sure you have the [backend for this frontend](https://github.com/BreakTools/deadline-web-app-backend) running. 
 2. Clone this repository.
 ```
@@ -44,26 +45,18 @@ git clone https://github.com/BreakTools/deadline-web-app-frontend
 ```
 cd deadline-web-app-frontend
 ```
-4. Open `.env.local` and change NEXT_PUBLIC_BACKEND_URL to the URL of your running WebSocket backend.
-5. Build the Docker container.
+4. Open `docker-compose.yml` and change the NEXT_PUBLIC_BACKEND_URL arg to the URL of your running WebSocket backend. Feel free to change the container port as well.
+5. Build and run the Docker container.
 ```
-docker build -t deadline-web-app-frontend .
+docker compose up
 ```
-6. Run the backend.
-```
-docker run -p 3000:3000 deadline-web-app-frontend
-```
-That's it! The backend is now running. By default it runs on port 3000, to change this you can set the `PORT` environment variable to another value, like this:
-```
-docker run -e PORT=4000 -p 4000:4000 deadline-web-app-frontend
-```
-Make sure to put this webserver behind a domain name with SSL, otherwise the desktop notifications won't work.
+That's it! The frontend is now running. Make sure to put this webserver behind a domain name with SSL, otherwise the desktop notifications won't work.
 
 # Installation instructions (Standalone)
 1. Make sure you have the [backend for this frontend](https://github.com/BreakTools/deadline-web-app-backend) running. 
 2. Make sure you have a recent version of NodeJS installed.
 3. Download this repository, put it in a good spot and cd into it. Run `npm install` to download all needed Node packages.
-4. Open `.env.local` and change NEXT_PUBLIC_BACKEND_URL to the URL of your running WebSocket backend.
+4. Create and open `.env.local`, add a NEXT_PUBLIC_BACKEND_URL and set it to the URL of your running WebSocket backend.
 5. Run `npm run build`, then run `npm run start` to start the webserver.
 
 That's it! Make sure to put this webserver behind a domain name with SSL, otherwise the desktop notifications won't work.
