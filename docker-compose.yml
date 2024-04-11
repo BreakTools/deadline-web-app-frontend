@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  deadline-web-app-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BACKEND_URL: wss://your_backend_url
+    ports:
+      - "2000:80" 
