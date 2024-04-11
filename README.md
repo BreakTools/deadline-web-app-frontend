@@ -35,7 +35,7 @@ Monitor your render jobs from anywhere right on your phone.
 </p>
 
 # Installation instructions (Docker)
-Unfortunately I can't provided a built image due to how NextJS generates static HTML at build time, which has to include the backend WebSocket URL. I've provided a docker-compose file so you can easily build and run the image yourself.
+Unfortunately I can't provide a built image due to how NextJS generates static HTML at build time, which has to include the backend WebSocket URL. I've provided a docker-compose file so you can easily build and run the image yourself.
 1. Make sure you have the [backend for this frontend](https://github.com/BreakTools/deadline-web-app-backend) running. 
 2. Clone this repository.
 ```
