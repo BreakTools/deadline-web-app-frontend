@@ -1,6 +1,6 @@
 # Deadline Web App Frontend
 
-**Meet the BreakTools Deadline Web App, the all in one render farm monitor made for artists on the go.
+**Meet the BreakTools Deadline Web App, the all in one render farm monitor made for artists on the go.**
 ![WebAppPromo](https://github.com/BreakTools/deadline-web-app-frontend/assets/63094424/38836cfb-f123-4d0f-8606-1a58bfd2721f)
 
 # Features
